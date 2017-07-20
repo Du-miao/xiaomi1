@@ -1,0 +1,236 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "微软雅黑";
+  box-sizing: border-box; }
+
+.box {
+  width: 100%;
+  overflow: hidden; }
+
+a {
+  color: #000; }
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 94%;
+  padding: 0 3%;
+  height: 46px;
+  align-items: center;
+  z-index: 2; }
+  .top input {
+    width: 60%;
+    height: 70%;
+    border-radius: 8px;
+    outline: none;
+    border: none; }
+
+#banner {
+  width: 100%;
+  height: 156px; }
+
+#bannerUl {
+  list-style: none;
+  height: 156px; }
+
+#bannerUl img {
+  width: 100%;
+  height: 100%; }
+
+#bannerUl li {
+  width: 100%;
+  display: none;
+  position: absolute; }
+
+#yuan {
+  position: relative;
+  bottom: 30px;
+  left: 135px; }
+
+#yuan li {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  float: left;
+  list-style: none;
+  margin-left: 30px;
+  border-radius: 50%; }
+
+#yuan li:hover {
+  background: #fff;
+  color: red; }
+
+.nav {
+  font-size: 0.8rem;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  border-bottom: 10px solid #F5F5F5; }
+  .nav a {
+    width: 25%;
+    margin-bottom: 20px;
+    position: relative; }
+    .nav a p:nth-child(2) {
+      line-height: 30px; }
+    .nav a .orange {
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: #FF7F00;
+      color: #fff;
+      display: inline-block;
+      padding: 3px;
+      border-radius: 5px; }
+
+.con-one {
+  font-size: 0.9rem;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap; }
+  .con-one a {
+    width: 33%;
+    padding: 1.5rem 0;
+    border-right: 1px solid #F5F5F5;
+    border-bottom: 1px solid #F5F5F5; }
+  .con-one a:nth-child(1) {
+    color: #E55B4F; }
+  .con-one a:nth-child(2) {
+    color: #43BD4D; }
+  .con-one a:last-child {
+    border-right: none;
+    color: #58BCE1; }
+
+.con-two {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap; }
+  .con-two a {
+    width: 49.5%;
+    padding: 1.5rem 0;
+    border-right: 1px solid #F5F5F5;
+    border-bottom: 1px solid #F5F5F5; }
+    .con-two a img {
+      width: 95%; }
+  .con-two a:last-child {
+    border-right: none; }
+
+.con-three {
+  font-size: 0.9rem;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap; }
+  .con-three a {
+    padding: 1.5rem 0;
+    border-right: 1px solid #F5F5F5;
+    border-bottom: 1px solid #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .con-three a:nth-child(1), .con-three a:nth-child(3) {
+    width: 29%; }
+  .con-three a:nth-child(2) {
+    width: 40%; }
+  .con-three a:nth-child(3) {
+    border-right: none; }
+
+.con-four {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+  border-bottom: 10px solid #F5F5F5;
+  padding-bottom: 0.2rem; }
+  .con-four .con-four-left {
+    width: 65%; }
+    .con-four .con-four-left img {
+      width: 100%; }
+  .con-four .con-four-right {
+    width: 35%; }
+    .con-four .con-four-right p:nth-child(1) {
+      font-weight: bold;
+      font-size: 0.88rem;
+      margin-bottom: 5px; }
+    .con-four .con-four-right p:nth-child(2) {
+      color: #A5A6A6;
+      font-size: 0.8rem;
+      margin-left: 8px;
+      line-height: 20px; }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.4rem;
+  height: 40px;
+  align-items: center;
+  font-size: 1.2rem;
+  border-left: 5px solid #FF9804;
+  border-bottom: 1px solid #F5F5F5; }
+  .row p:nth-child(1) {
+    color: #FF9804;
+    padding-left: 0.5rem; }
+  .row p:nth-child(2) {
+    color: #999C9D; }
+
+.main {
+  margin-bottom: 56px; }
+
+.mainDiv {
+  display: flex;
+  padding: 1rem 0;
+  border-bottom: 1px solid #F5F5F5; }
+
+.main-left {
+  width: 25%; }
+  .main-left img {
+    max-width: 100; }
+
+.main-right {
+  width: 75%; }
+
+.by {
+  color: grey;
+  font-size: 0.9rem;
+  margin: 10px 0; }
+
+.clear:after {
+  display: block;
+  content: '';
+  clear: both; }
+
+.price {
+  color: red;
+  float: left; }
+
+.time {
+  color: #7C7C7C;
+  float: right; }
+
+.last {
+  font-size: 0.9rem; }
+
+.foot {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: 56px;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  align-items: center;
+  z-index: 2;
+  font-size: 0.85rem; }
+  .foot a {
+    width: 20%; }
+
+/*# sourceMappingURL=index.css.map */
